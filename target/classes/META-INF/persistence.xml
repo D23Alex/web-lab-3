@@ -6,7 +6,6 @@
     <persistence-unit name="default">
         <mapping-file>ChecksEntity.xml</mapping-file>
         <class>com.d23alex.lab311.CheckORM</class>
-        <class>com.d23alex.lab311.ChecksEntity</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/studs"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/studs"/>

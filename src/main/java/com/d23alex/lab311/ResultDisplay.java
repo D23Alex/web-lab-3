@@ -24,7 +24,8 @@ public class ResultDisplay implements Serializable {
 
     public String checksRecalculatedForCurrentRAsJSON() {
         final Function<AreaChecking.Check, AreaChecking.Check> recalculateForCurrentR =
-                check -> AreaChecking.constructCheck(new AreaChecking.UserInputs(check.userInputs().point(), r), Initialization.area());
+                check -> AreaChecking.constructCheck(new AreaChecking.UserInputs(check.userInputs().point(), r),
+                        Initialization.area());
         return "[" +
                 toJSON(Database.getNLast(checksDisplayed).stream().map(recalculateForCurrentR).toList())
                 + "]";
