@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="web-lab-3-2" options="-endorseddirs $PROJECT_DIR$/target/endorsed" />
+      <module name="web-lab-3-2" options="-endorseddirs /home/aleksei/NetBeansProjects/web-lab-3-2/target/endorsed" />
     </option>
   </component>
 </project>

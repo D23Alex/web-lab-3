@@ -30,7 +30,10 @@
         <javac srcdir="${src.test.dir}"
                destdir="${test.dir}"
                includeantruntime="false">
-            <classpath refid="lib.test.path"/>
+            <classpath>
+                <path refid="lib.test.path"/>
+                <pathelement location="${build.classes}"/>
+            </classpath>
         </javac>
 
         <copy todir="${build.classes}">
@@ -89,7 +92,7 @@
 
         <exec executable="${git}">
             <arg value="add"/>
-            <arg value="/home/aleksei/NetBeansProjects/web-lab-3-2/test/report"/>
+            <arg value="./test/report"/>
         </exec>
 
         <exec executable="${git}">

@@ -39,7 +39,7 @@ public class ResultDisplay implements Serializable {
         return String.join(", ", checks.stream().map(ResultDisplay::toJSON).toList());
     }
 
-    private static String toJSON(AreaChecking.Check check) {
+    public static String toJSON(AreaChecking.Check check) { // made this public for the sake of tests
         return "{"
                 + "\"x\": " + check.userInputs().point().x()
                 + ", \"y\": " + check.userInputs().point().y()

@@ -7,7 +7,7 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class JSONTanslation {
+public class JSONTanslationTest {
     @Test
     public void areaCheckTranslatesToJSON() {
         final AreaChecking.Check check = new AreaChecking.Check(new AreaChecking.UserInputs(new AreaChecking.Point(1.0, 2.0), 3.0),
